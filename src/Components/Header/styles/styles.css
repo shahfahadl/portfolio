@@ -1,0 +1,19 @@
+.header {
+  padding: 50px;
+  color: yellow;
+  width: 100%;
+  max-width: 1400px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */

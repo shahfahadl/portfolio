@@ -1,0 +1,17 @@
+.nav {
+  padding: 0 50px;
+  color: white;
+  text-transform: lowercase;
+  max-width: 1400px;
+  width: 100%;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */

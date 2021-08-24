@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'montserrat';
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  font-size: 50px;
+  font-weight: 1000;
+  border-radius: 50%;
+  padding: 0 20px;
+  padding-bottom: 12px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  z-index: 100;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  background-size: cover !important;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.plastic {
+  opacity: 0.5 !important;
+  background-size: cover !important;
+}
+/*# sourceMappingURL=styles.css.map */
