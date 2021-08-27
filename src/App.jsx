@@ -19,7 +19,12 @@ const App = () => {
                 <Projects setIsPort={setIsPort} setCurrentPage={setCurrentPage} />
                 <Contact/>
                 <Footer/>
-                <div className="arrow">&#9650;</div>
+                <div className="arrow" onClick = {() => {
+                    window.scrollTo({
+                        top:0,
+                        behavior: 'smooth'
+                    });
+                }} >&#9650;</div>
             </div>
         </>
     )

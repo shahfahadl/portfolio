@@ -21,6 +21,40 @@
     position: relative;
 }
 
+.url{
+    opacity: 0;
+    pointer-events: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    transition: all 0.1s;
+    flex-wrap: wrap;
+}
+
+.container:hover .url{
+    opacity: 1;
+    pointer-events:all;
+}
+
+// .container:hover .img{
+//     height: 60vh;
+//     width: 35vw;
+// }
+
+.container:hover .box{
+    height: 100%;
+    width: 100%;
+}
+
 .box{
     position: absolute;
     width: 150px;
@@ -30,6 +64,7 @@
     left: -50px;
     z-index: -1;
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.4);
+    transition: all 0.2s;
 }
 
 .bgtext{
@@ -42,27 +77,10 @@
     }
 }
 
-.img{
-    overflow: hidden;
-    // position: relative;
-    height: 55vh;
+.portImage{
+    width: 400px;
     border: 5px solid black;
-    width: 30vw;
-    :nth-child(3)
-    {
-        height: 100%;
-    }
-
-    :nth-child(1), :nth-child(2)
-    {
-        position: absolute;
-        height: 30px;
-        transform: rotateZ(60deg);
-    }
-    
-    :nth-child(2){
-        transform: rotateZ(0deg) !important;
-    }
+    // height: 100%;
 }
 
 .weird{

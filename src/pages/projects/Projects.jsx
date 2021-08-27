@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import './styles/styles.css';
 import project1 from '../../img/project1.png';
-import project2 from '../../img/project2.jpeg';
-import project3 from '../../img/project3.jpg';
+import project2 from '../../img/project2.png';
+import project3 from '../../img/project3.png';
 import project4 from '../../img/project4.jpg';
 import tape from '../../img/tape.png';
 import plastic from '../../img/plastic.jpg';
@@ -13,10 +13,10 @@ import background from '../../img/background.jpg'
 const Main = ({setCurrentPage, setIsPort}) => {
     
     const [projects, setProjects] = useState([
-        {name: 'Portfolio', power: '1', selected: false, image: project1},
-        {name: 'Chat Application', power: '2', selected: false, image: project2},
-        {name: 'Online Test', power: '3', selected: false, image: project3},
-        {name: 'Clinic Management', power: '4', selected: false, image: project4},
+        {fullName: 'Chat Application', power: '1', selected: false, image: project1, link: 'https://chat-fahad.herokuapp.com/', name:'chat-fahad' },
+        {fullName: 'Portfolio', power: '2', selected: false, image: project2, link: '#', name:'Fahad- Portfolio' },
+        {fullName: 'Online Test (contribution)', power: '3', selected: false, image: project3, link: 'https://tecision.herokuapp.com/', name:'Tecision-app' },
+        // {name: 'Clinic Management', power: '4', selected: false, image: project4},
     ]);
 
     const [currentProject, setCurrentProject] = useState(null);
@@ -47,6 +47,12 @@ const Main = ({setCurrentPage, setIsPort}) => {
         setProjects(arr);
     }
 
+    const goToLink = (link) => {
+        if(link === '#')
+            return;
+        window.open(link, "_blank");
+    }
+
     return (
         <>
             <div className="main-page">
@@ -61,9 +67,10 @@ const Main = ({setCurrentPage, setIsPort}) => {
                 <div className="main">
                     <div className="container">
                         <div className="img">
-                            <img src={tape} alt="" />
-                            <img src={tape} alt="" />
-                            <img src={currentProject?.image} alt="" />
+                            <img className='portImage' src={currentProject?.image} alt="" />
+                        </div>
+                        <div className="url" onClick = {() => {goToLink(currentProject?.link)}}>
+                            <span>{currentProject?.name}</span>
                         </div>
                         <div className="box"></div>
                     </div>
@@ -73,7 +80,7 @@ const Main = ({setCurrentPage, setIsPort}) => {
                             {projects.map((project) => (
                                 <li key={project.power} className={`item ${(project.selected === true) && 'selected'}`} onClick={() => {setSelected(project.power)}} >
                                     <span className='power'>{project.power}</span>
-                                    <h3>{project.name}</h3>
+                                    <h3>{project.fullName}</h3>
                                 </li>
                             ))}
                         </ul>

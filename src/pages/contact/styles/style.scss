@@ -92,6 +92,7 @@
     // background-color: rgba(255, 255, 255, 0.1);
     right: 50px;
     border-radius: 10px;
+    transition: all 0.2s;
     padding: 30px 50px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.6);
@@ -102,15 +103,6 @@
     ul{
         list-style-type: none;
     }
-}
-
-.divider{
-    height: 70%;
-    width: 2px;
-    background-color: rgba(255, 255, 255, 0.2);
-    z-index: 100;
-    position: absolute;
-    left: 175px
 }
 
 .service{
@@ -151,6 +143,10 @@
         height: 100%;
         width: 100%;
     }
+}
+
+.services:hover{
+    padding: 50px 70px;
 }
 
 @media (max-width: 930px){

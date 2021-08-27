@@ -14,6 +14,12 @@ const Contact = () => {
         "July", "Aug", "Sept", "Oct", "Nov", "Dec"
         ];
 
+    const goToLink = (link) => {
+        if(link === '#')
+            return;
+        window.open(link, "_blank");
+    }
+
 
     return (
         <div className="contact-container">
@@ -31,14 +37,14 @@ const Contact = () => {
                 </div>
                 <h2>Contact</h2>
                 <div className="links">
-                    <div className="card">
+                    <div className="card" onClick={() => goToLink('https://www.facebook.com/shahfahad.dev')} >
                         <img src={facebook} alt="" />
                     </div>
-                    <div className="card">
-                        <img src={fiverr} alt="" />
-                    </div>
-                    <div className="card">
+                    <div className="card" onClick={() => goToLink('https://www.instagram.com/shahfahad.dev')} >
                         <img src={instagram} alt="" />
+                    </div>
+                    <div className="card" onClick={() => goToLink('https://www.fiverr.com/shahfahadk')} >
+                        <img src={fiverr} alt="" />
                     </div>
                 </div>
                 <div className="services">
