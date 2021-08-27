@@ -40,27 +40,6 @@ const Landing = ({setCurrentPage, setIsPort}) => {
                         </div>
                     </div>
                 </div>
-                {/* <div className="row2">
-                    <div className="sf">
-                        <div className="theO" style={{
-                            backgroundImage: `url(${back})`
-                        }} >
-                            SF.
-                        </div>
-                        <div className="theObefore">
-                            SF.
-                        </div>
-                        <div className="theOafter">
-                            SF.
-                        </div>
-                    </div>
-                    <div className="triangles">
-                        <div class="triangle1" style={{
-                            backgroundImage: `url(${back})`
-                        }} >&#9650;</div>
-                        <div class="triangle2">&#9650;</div>
-                    </div>
-                </div> */}
             </div>
         </>
     )

@@ -14,8 +14,8 @@ const Main = ({setCurrentPage, setIsPort}) => {
     
     const [projects, setProjects] = useState([
         {fullName: 'Chat Application', power: '1', selected: false, image: project1, link: 'https://chat-fahad.herokuapp.com/', name:'chat-fahad' },
-        {fullName: 'Portfolio', power: '2', selected: false, image: project2, link: '#', name:'Fahad- Portfolio' },
-        {fullName: 'Online Test (contribution)', power: '3', selected: false, image: project3, link: 'https://tecision.herokuapp.com/', name:'Tecision-app' },
+        {fullName: 'Portfolio', power: '2', selected: false, image: project3, link: '#', name:'Fahad- Portfolio' },
+        {fullName: 'Online Test (contribution)', power: '3', selected: false, image: project2, link: 'https://tecision.herokuapp.com/', name:'Tecision-app' },
         // {name: 'Clinic Management', power: '4', selected: false, image: project4},
     ]);
 
